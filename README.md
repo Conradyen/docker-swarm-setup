@@ -9,9 +9,9 @@ sudo vim /etc/hosts
 ```
 
 ```
-192.168.0.102  managernode
-192.168.0.103  workernode1
-192.168.0.104  workernode2
+192.168.89.102  managernode
+192.168.89.103  workernode1
+192.168.89.104  workernode2
 ```
 
 ## 2. Set up IP address
@@ -50,5 +50,13 @@ sudo firewall-cmd --permanent --add-port=4789/udp
 ```
 sudo firewall-cmd --reload
 sudo systemctl restart docker
+```
+
+## 5. Config cluster
+
+Manager node
+
+```
+sudo docker swarm init --force-new-cluster
 ```
 
