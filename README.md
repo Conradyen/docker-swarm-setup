@@ -1,6 +1,6 @@
 # Docker-Swarm-Setup
 
-##### CentOS7
+### For centOS7 
 
 ## 1. set up hosts static IP
 
