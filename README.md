@@ -1,7 +1,8 @@
-# docker-swarm-setup
+# Docker-Swarm-Setup
+
 ##### CentOS7
 
-1. set up hosts static IP
+## 1. set up hosts static IP
 
 ```
 sudo vim /etc/hosts
@@ -13,7 +14,7 @@ sudo vim /etc/hosts
 192.168.0.104  workernode2
 ```
 
-2. Set up IP address
+## 2. Set up IP address
 
 ### Manager node:
 
@@ -33,7 +34,7 @@ sudo hostnamectl set-hostname workernode1
 sudo hostnamectl set-hostname workernode2
 ```
 
-3. Fire wall
+## 3. Fire wall
 
 ```
 sudo firewall-cmd --permanent --add-port=2376/tcp
@@ -44,7 +45,7 @@ sudo firewall-cmd --permanent --add-port=7946/udp
 sudo firewall-cmd --permanent --add-port=4789/udp
 ```
 
-4. Reload Docker and firewall 
+## 4. Reload Docker and firewall 
 
 ```
 sudo firewall-cmd --reload
