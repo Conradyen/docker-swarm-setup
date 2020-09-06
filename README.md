@@ -1,6 +1,6 @@
 # Docker-Swarm-Setup
 
-### For centOS7 
+### For centOS7 && Docker version 19.03.12
 
 ## 1. set up hosts static IP
 
@@ -60,3 +60,10 @@ Manager node
 sudo docker swarm init --force-new-cluster
 ```
 
+Worker node
+
+Docker swarm uses port 2377 by default.
+
+```
+sudo swarm join --token <token> <MANAGER_IP_ADDRESS>:2377
+```
