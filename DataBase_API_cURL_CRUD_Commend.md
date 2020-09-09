@@ -11,7 +11,9 @@ Insert user to database.
 Required field:
 
 firstName: String
+
 lastName: String
+
 age: Integer
 
 ```
@@ -33,6 +35,7 @@ Update user data in data base.
 Required field:
 
 id : Integer
+
 input: JSON
 
 ```
