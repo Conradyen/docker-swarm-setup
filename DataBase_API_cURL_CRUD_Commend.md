@@ -2,7 +2,7 @@
 
 # CRUD operation cURL commend 
 
-*commend must be one line.
+* commend must be in one line.
 
 ### Create
 
